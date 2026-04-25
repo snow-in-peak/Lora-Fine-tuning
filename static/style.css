@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: #0f1115;
+  color: #f2f3f5;
+}
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.header h1 {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+}
+
+.header p {
+  margin: 0;
+  color: #b6bcc8;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.actions input {
+  width: 180px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #3b4250;
+  background: #181c24;
+  color: #fff;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+  cursor: pointer;
+  background: #3e7bfa;
+  color: #fff;
+  font-size: 14px;
+}
+
+.status {
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #1a1f28;
+  margin-bottom: 16px;
+  color: #d7dce4;
+}
+
+.status.ok {
+  background: #16271a;
+  color: #9fe3a8;
+}
+
+.status.err {
+  background: #30191a;
+  color: #ff9a9a;
+}
+
+.chat-box {
+  height: 520px;
+  overflow-y: auto;
+  background: #171a20;
+  border: 1px solid #262b35;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.msg {
+  margin-bottom: 14px;
+}
+
+.msg .name {
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.msg .content {
+  line-height: 1.7;
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: #212632;
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.msg.user .content {
+  background: #1f355a;
+}
+
+.msg.assistant .content {
+  background: #2a2220;
+}
+
+.chat-form {
+  display: flex;
+  gap: 12px;
+}
+
+.chat-form textarea {
+  flex: 1;
+  resize: vertical;
+  min-height: 72px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #363d49;
+  background: #181c24;
+  color: #fff;
+}
+
+.chat-form button {
+  min-width: 120px;
+}
